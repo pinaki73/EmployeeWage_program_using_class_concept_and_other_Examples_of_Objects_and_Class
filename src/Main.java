@@ -12,7 +12,7 @@ class Animal{
         System.out.println("The animal can move");
     }
 }
-class Dog extends Animal{
+class Dog extends ANIMALS {
     String breed = "Dog";
     public void movement(){
         System.out.println("The dog can run");

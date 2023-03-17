@@ -13,7 +13,7 @@ class Student{
         return rollno;
     }
 
-    public long getPhonenumber() {
+    public long getphonenumber() {
         return phonenumber;
     }
     public void setName(String inputname) {
@@ -44,7 +44,7 @@ public class Encapsulation {
         s1.setphone(mobile);
         System.out.println(s1.getName( ));
         System.out.println(s1.getRollno());
-        System.out.println(s1.getPhonenumber());
+        System.out.println(s1.getphonenumber());
 
     }
 }
