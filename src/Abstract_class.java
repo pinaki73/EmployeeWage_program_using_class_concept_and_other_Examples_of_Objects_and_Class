@@ -1,11 +1,13 @@
 
 abstract class ANIMALS {
-    public void eat(){
+    public boolean eat(){
         System.out.println("the animal can eat");
+        return false;
     }
     class Dog extends ANIMALS {
-        public void eat(){
+        public boolean eat(){
             System.out.println("the animal can eat");
+            return false;
         }
     }
 }

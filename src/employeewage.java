@@ -1,16 +1,26 @@
-class Employee{
+class Employee {
     int workinghrs = 0;
     int wageperhr = 100;
     int empwage = 0;
     int total_wage = 0;
-    int days_in_a_month = 20;
+    int no_of_working_days = 20;
+    public void empwage() {
+        empwage = workinghrs * wageperhr;
+        System.out.println("The empwage is = " + empwage);
+    }
 
+    public void totalwage() {
+        total_wage += empwage;
+        System.out.println("The total wage for a month is " + total_wage);
+    }
 }
+
 
 public class employeewage {
     public static void main(String[] args) {
         Employee e1 = new Employee();
-        for (int i = 0; i <e1.days_in_a_month; i++) {
+
+        for (int i = 0; i <= e1.no_of_working_days; i++) {
             int empcheck = (int) Math.floor(Math.random() * 10) % 3;
             switch (empcheck) {
                 case 1:
@@ -25,11 +35,9 @@ public class employeewage {
                     e1.workinghrs = 0;
                     break;
             }
-            e1.empwage = e1.workinghrs * e1.wageperhr;
-            System.out.println(" ");
-            System.out.println("The wage of the employee is = "+e1.empwage);
-            e1.total_wage += e1.empwage;
-            System.out.println(" The total employee wage for a month is = " + e1.total_wage );
+            e1.empwage();
+            e1.totalwage();
         }
     }
 }
+

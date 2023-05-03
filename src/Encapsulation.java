@@ -23,6 +23,7 @@ class Student{
         this.phonenumber = phno;
     }
     public void setroll(int roll){
+
         this.rollno = roll;
     }
     public void setphone(long phno){
